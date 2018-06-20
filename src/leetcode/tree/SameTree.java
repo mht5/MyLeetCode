@@ -4,6 +4,7 @@ import leetcode.util.TreeNode;
 
 /**
  * Given two binary trees, write a function to check if they are equal or not.
+ * https://leetcode.com/problems/same-tree/description/
  * @author mhts
  *
  */

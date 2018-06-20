@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.other;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation 
  * it essentially peek() at the element that will be returned by the next call to next().
+ * https://leetcode.com/problems/peeking-iterator/description/
  * @author mhts
  *
  */

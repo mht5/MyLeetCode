@@ -1,5 +1,12 @@
-package leetcode;
+package leetcode.other;
 
+/** 
+ * NOT SOLVED YET!!!
+ * Given an input string, reverse the string word by word.
+ * https://leetcode.com/problems/reverse-words-in-a-string/description/
+ * @author mhts
+ * 
+ */
 public class ReverseWordsInAString {
 	public static void main(String[] args){
 //		String s="      do  not  go gentle  into     that  dark night   ";

@@ -2,6 +2,13 @@ package leetcode.linked_list;
 
 import leetcode.util.ListNode;
 
+/**
+ * Merge two sorted linked lists and return it as a new list.
+ * The new list should be made by splicing together the nodes of the first two lists.
+ * https://leetcode.com/problems/merge-two-sorted-lists/description/
+ * @author mhts
+ * 
+ */
 public class MergeTwoSortedLists {
 	public static  void main(String[] args){
 		ListNode node1=new ListNode(1);

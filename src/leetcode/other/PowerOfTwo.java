@@ -1,7 +1,8 @@
-package leetcode;
+package leetcode.other;
 
 /**
  * Given an integer, write a function to determine if it is a power of two.
+ * https://leetcode.com/problems/power-of-two/description/
  * @author mhts
  *
  */

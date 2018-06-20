@@ -1,9 +1,10 @@
-package leetcode;
+package leetcode.other;
 
 import java.util.Stack;
 
 /**
  * Implement the following operations of a queue using stacks.
+ * https://leetcode.com/problems/implement-queue-using-stacks/description/
  * @author mhts
  *
  */

@@ -1,10 +1,11 @@
-package leetcode;
+package leetcode.other;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Given an array of size n, find the majority element. The majority element is the element that appears more than ?6?5 n/2 ?6?6 times.
+ * https://leetcode.com/problems/majority-element/description/
  * @author mhts
  *
  */

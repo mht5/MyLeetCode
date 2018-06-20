@@ -3,6 +3,12 @@ package leetcode.linked_list;
 
 import leetcode.util.ListNode;
 
+/**
+ * Reverse a singly linked list.
+ * https://leetcode.com/problems/reverse-linked-list/description/
+ * @author mhts
+ * 
+ */
 public class ReverseLinkedList {
 	public static void main(String[] args){
 		ListNode node1=new ListNode(1);

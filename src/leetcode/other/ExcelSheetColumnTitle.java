@@ -1,7 +1,8 @@
-package leetcode;
+package leetcode.other;
 
 /**
  * Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+ * https://leetcode.com/problems/excel-sheet-column-title/description/
  * @author mhts
  *
  */

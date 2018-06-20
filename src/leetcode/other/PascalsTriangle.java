@@ -1,10 +1,11 @@
-package leetcode;
+package leetcode.other;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Given numRows, generate the first numRows of Pascal's triangle.
+ * https://leetcode.com/problems/pascals-triangle/description/
  * @author mhts
  *
  */
