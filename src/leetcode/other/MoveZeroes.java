@@ -6,30 +6,22 @@ package leetcode.other;
  * @author mhts
  *
  */
-public class MoveZeroes_01 {
+public class MoveZeroes {
 	public static void main(String[] args){
 		int[] nums=new int[]{0,0,0,1,0,3,12,11,3,2,3,4,1,0,0,0,4,3,2,4,};
 		moveZeroes(nums);
 	}
 	
 	public static void moveZeroes(int[] nums) {
-		long start=System.currentTimeMillis();
-		doMove(nums);
-		doMove(nums);
+        int index=0;
         for(int i=0; i<nums.length; i++){
-        	System.out.print(nums[i]+", ");
+            if(nums[i]!=0){
+                nums[index]=nums[i];
+                index++;
+            }
         }
-        System.out.println("\n"+(System.currentTimeMillis()-start)+"ms");
+        for(; index<nums.length; index++){
+            nums[index]=0;
+        }
     }
-	
-    public static void doMove(int[] nums) {
-        for(int i=0; i<nums.length; i++){
-        	if(nums[i]==0){
-        		for(int j=i; j<nums.length-1; j++){
-        			nums[j]=nums[j+1];
-        			nums[j+1]=0;
-        		}
-        	}
-        }
-	}
 }

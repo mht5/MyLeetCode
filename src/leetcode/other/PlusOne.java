@@ -7,7 +7,7 @@ package leetcode.other;
  * @author mhts
  *
  */
-public class PlusOne_01 {
+public class PlusOne {
 	public static void main(String[] args){
 		int[] num=new int[]{9,9,8};
 		num=plusOne(num);
@@ -15,11 +15,25 @@ public class PlusOne_01 {
 			System.out.print(i+", ");
 		}
 		System.out.println();
-		num=plusOne(num);
+		num=plusOne1(num);
 		for(int i : num){
 			System.out.print(i+", ");
 		}
 	}
+	
+	public static int[] plusOne1(int[] digits) {
+		int l=digits.length;
+		for(int i=l-1; i>=0; i--){
+			if(digits[i]<9){
+				digits[i]++;
+				return digits;
+			}
+			digits[i]=0;
+		}
+		int[] answer=new int[l+1];
+		answer[0]=1;
+		return answer;
+    }
 	
 	public static int[] plusOne(int[] digits) {
 		if(digits.length==0){

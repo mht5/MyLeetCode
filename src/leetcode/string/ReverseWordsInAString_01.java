@@ -8,22 +8,11 @@ import java.util.StringJoiner;
  * @author mhts
  *
  */
-public class ReverseWordsInAString {
+public class ReverseWordsInAString_01 {
 	public static void main(String[] args){
 		String s = "     do  not  go gentle  into     that  dark night   ";
 //		String s = "        ";
-		System.out.println("*"+reverseWords2(s)+"*");
-	}
-
-	public static String reverseWords2(String s) {
-		String[] words = s.trim().split(" ");
-		StringBuilder sb = new StringBuilder();
-		for (int i = words.length - 1; i >= 0; i--) {
-			if (!words[i].isEmpty()) {
-				sb.append(words[i] + " ");
-			}
-		}
-		return sb.toString();
+		System.out.println("*"+reverseWords1(s)+"*");
 	}
 
 	public static String reverseWords1(String s) {
