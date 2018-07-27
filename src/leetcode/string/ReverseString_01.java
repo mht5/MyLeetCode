@@ -6,7 +6,7 @@ package leetcode.string;
  * @author mhts
  * @date 2018Äê7ÔÂ26ÈÕ
  */
-public class ReverseString {
+public class ReverseString_01 {
 
 	public static void main(String[] args) {
 		String str = "Hello, World";
