@@ -13,26 +13,54 @@ public class ValidPalindrome_02 {
 		System.out.println(validPalindrome(str));
 		System.out.println(validPalindrome1(str));
 		System.out.println(validPalindrome2(str));
+		System.out.println(validPalindrome3(str));
 
 		long time1 = System.currentTimeMillis();
-		for (int i = 0; i < 1000000; i++) {
+		for (int i = 0; i < 10000000; i++) {
 			validPalindrome(str);
 		}
 		long time2 = System.currentTimeMillis();
-		for (int i = 0; i < 1000000; i++) {
+		for (int i = 0; i < 10000000; i++) {
 			validPalindrome1(str);
 		}
 		long time3 = System.currentTimeMillis();
-		for (int i = 0; i < 1000000; i++) {
+		for (int i = 0; i < 10000000; i++) {
 			validPalindrome2(str);
 		}
 		long time4 = System.currentTimeMillis();
+		for (int i = 0; i < 10000000; i++) {
+			validPalindrome3(str);
+		}
+		long time5 = System.currentTimeMillis();
 		System.out.println(time2 - time1);
 		System.out.println(time3 - time2);
 		System.out.println(time4 - time3);
+		System.out.println(time5 - time4);
 	}
 
-    public static boolean validPalindrome2(String s) {
+    public static boolean validPalindrome3(String s) {
+    	int count = isPalindrome3(s.toCharArray(), 0, s.length() - 1, 0);
+    	return count == 0 || count == 1;
+    }
+
+    private static int isPalindrome3(char[] array, int start, int end, int num) {
+		if (start > end || num > 1) {
+			return -1;
+		}
+		while (start <= end && array[start] == array[end]) {
+			start++;
+			end--;
+		}
+		if (start > end) {
+			return 0;
+		} else {
+			int left = isPalindrome3(array, start + 1, end, num + 1);
+			int right = isPalindrome3(array, start, end - 1, num + 1);
+			return (left == 0 || right == 0) ? 0 : -1;
+		}
+	}
+
+	public static boolean validPalindrome2(String s) {
     	int j;
     	for (int i = 0; i < s.length() / 2; i++) {
     		j = s.length() - 1 - i;
