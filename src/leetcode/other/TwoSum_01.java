@@ -9,7 +9,7 @@ import java.util.Map;
  * @author mhts
  * @date 2018Äê6ÔÂ20ÈÕ
  */
-public class TwoSum {
+public class TwoSum_01 {
 
 	public static void main(String[] args) {
 		int[] nums = {1,2,3,4,5,6,7,8,9};
