@@ -5,19 +5,14 @@ package leetcode.binary_search;
  * @author mhts
  * @date 2018Äê8ÔÂ4ÈÕ
  */
-public class GuessNumberHigherOrLower extends GuessGame {
-	
-	public GuessNumberHigherOrLower(int num) {
-		super(num);
-	}
+public class GuessNumberHigherOrLower {
 
 	public static void main(String[] args) {
-		GuessNumberHigherOrLower myClass = new GuessNumberHigherOrLower(123);
 		int n = 1000;
-		System.out.println(myClass.guessNumber(n));
+		System.out.println(guessNumber(n));
 	}
 	
-    public int guessNumber(int n) {
+    public static int guessNumber(int n) {
     	int l = 1;
     	int h = n;
     	int m;
@@ -33,5 +28,15 @@ public class GuessNumberHigherOrLower extends GuessGame {
     	}
     	return 0;
     }
+	
+	private static int guess(int num) {
+		if (256 == num) {
+			return 0;
+		} else if (256 > num) {
+			return 1;
+		} else {
+			return -1;
+		}
+	}
 
 }
