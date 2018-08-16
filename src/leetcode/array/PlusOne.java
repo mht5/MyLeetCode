@@ -1,4 +1,4 @@
-package leetcode.other;
+package leetcode.array;
 
 /**
  * Given a non-negative number represented as an array of digits, plus one to the number.
