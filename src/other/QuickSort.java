@@ -22,12 +22,12 @@ public class QuickSort {
 		for (int i : array) {
 			System.out.print(i + ", ");
 		}
-		System.out.println();
+		/*System.out.println();
 		array = new int[]{1,5,6,8,7,4,3,2,1,5,6,7,9,0,8,7,6,5,6,7,8};
 		quickSort2(array, 0, array.length - 1);
 		for (int i : array) {
 			System.out.print(i + ", ");
-		}
+		}*/
 
 		long time1 = System.currentTimeMillis();
 		for (int i = 0; i < 10000000; i++) {
@@ -37,7 +37,7 @@ public class QuickSort {
 		long time2 = System.currentTimeMillis();
 		for (int i = 0; i < 10000000; i++) {
 			array = new int[]{1,5,6,8,7,4,3,2,1,5,6,7,9,0,8,7,6,5,6,7,8};
-			quickSort(array, 0, array.length - 1);
+			quickSort1(array, 0, array.length - 1);
 		}
 		long time3 = System.currentTimeMillis();
 		for (int i = 0; i < 10000000; i++) {

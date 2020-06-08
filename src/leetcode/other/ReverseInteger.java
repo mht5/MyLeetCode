@@ -9,7 +9,7 @@ package leetcode.other;
 public class ReverseInteger {
 
 	public static void main(String[] args) {
-		int result = reverse(120300);
+		int result = reverse(-120300);
 		System.out.println(result);
 	}
 
