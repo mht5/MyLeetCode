@@ -11,7 +11,7 @@ public class CountAndSay {
 		int n = 5;
 		System.out.println(countAndSay(n));
 	}
-	
+
     public static String countAndSay(int n) {
         if (n == 1) {
         	return "1";

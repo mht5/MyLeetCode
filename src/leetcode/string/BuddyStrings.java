@@ -15,11 +15,11 @@ public class BuddyStrings {
 		System.out.println(buddyStrings1(str1, str2));
 		
 		long time1 = System.currentTimeMillis();
-		for (int i = 0; i < 10000000; i++) {
+		for (int i = 0; i < 100000000; i++) {
 			buddyStrings(str1, str2);
 		}
 		long time2 = System.currentTimeMillis();
-		for (int i = 0; i < 10000000; i++) {
+		for (int i = 0; i < 100000000; i++) {
 			buddyStrings1(str1, str2);
 		}
 		long time3 = System.currentTimeMillis();

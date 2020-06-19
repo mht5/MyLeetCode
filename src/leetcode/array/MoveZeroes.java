@@ -8,20 +8,23 @@ package leetcode.array;
  */
 public class MoveZeroes {
 	public static void main(String[] args){
-		int[] nums=new int[]{0,0,0,1,0,3,12,11,3,2,3,4,1,0,0,0,4,3,2,4,};
+		int[] nums = new int[]{0,0,0,1,0,3,12,11,3,2,3,4,1,0,0,0,4,3,2,4};
 		moveZeroes(nums);
+		for (int n : nums) {
+		    System.out.print(n + " ");
+        }
 	}
 	
 	public static void moveZeroes(int[] nums) {
-        int index=0;
-        for(int i=0; i<nums.length; i++){
-            if(nums[i]!=0){
-                nums[index]=nums[i];
+        int index = 0;
+        for(int i = 0; i < nums.length; i++){
+            if (nums[i] != 0) {
+                nums[index] = nums[i];
                 index++;
             }
         }
-        for(; index<nums.length; index++){
-            nums[index]=0;
+        for(; index < nums.length; index++){
+            nums[index] = 0;
         }
     }
 }

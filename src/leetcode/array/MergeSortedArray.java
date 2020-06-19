@@ -1,14 +1,17 @@
 package leetcode.array;
 
+/**
+ * https://leetcode.com/problems/merge-sorted-array/
+ */
 public class MergeSortedArray {
 
     public static void main(String[] args) {
-        int[] nums1 = {1, 3, 5, 7, 9, 11};
+        int[] nums1 = {1, 3, 5, 7, 9, 11, 0, 0, 0, 0, 0, 0, 0, 0};
         int[] nums2 = {0, 2, 4, 6, 8, 10, 13, 14};
-        new MergeSortedArray().merge(nums1, nums1.length, nums2, nums2.length);
+        merge(nums1, nums1.length, nums2, nums2.length);
     }
 
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
+    public static void merge(int[] nums1, int m, int[] nums2, int n) {
         int x = 0;
         int y = 0;
         int[] arr = new int[m + n];
@@ -25,10 +28,8 @@ public class MergeSortedArray {
                 arr[i] = nums1[x++];
             }
         }
-        nums1 = new int[m + n];
         for (int i = 0; i < arr.length; i++) {
             nums1[i] = arr[i];
-            System.out.print(nums1[i] + " ");
         }
     }
 }

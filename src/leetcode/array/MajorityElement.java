@@ -11,14 +11,41 @@ import java.util.Map;
  */
 public class MajorityElement {
 	public static void main(String[] args){
-		int[] nums=new int[101];
-		for(int i=0;i<49; i++){
-			nums[i]=i;
+		int[] nums = new int[101];
+		for(int i = 0;i < 49; i++){
+			nums[i] = i;
 		}
-		for(int i=50; i<101; i++){
-			nums[i]=53;
+		for(int i = 50; i < 101; i++){
+			nums[i] = 53;
 		}
 		System.out.println(majorityElement(nums));
+		System.out.println(majorityElement1(nums));
+
+		long time1 = System.currentTimeMillis();
+		for (int i = 0; i < 100000; i++) {
+			majorityElement(nums);
+		}
+		long time2 = System.currentTimeMillis();
+		for (int i = 0; i < 100000; i++) {
+			majorityElement1(nums);
+		}
+		long time3 = System.currentTimeMillis();
+		System.out.println(time2 - time1);
+		System.out.println(time3 - time2);
+	}
+
+	public static int majorityElement1(int[] nums) {
+		int count = 0;
+		int major = nums[0];
+		for (int num : nums) {
+			if (num == major) {
+				count++;
+			} else if (--count == 0) {
+				count = 1;
+				major = num;
+			}
+		}
+		return major;
 	}
 	
     public static int majorityElement(int[] nums) {

@@ -8,8 +8,8 @@ package leetcode.string;
 public class LongestCommonPrefix {
 
 	public static void main(String[] args) {
-		String[] strs = {};
-//		String[] strs = {"flower","flow","flight"};
+//		String[] strs = {};
+		String[] strs = {"flower","flow","flight"};
 //		String[] strs = {"racecar","dog32","car1","asd"};
 		System.out.println(longestCommonPrefix(strs));
 	}
