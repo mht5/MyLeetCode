@@ -9,7 +9,7 @@ import java.util.Map;
  * @author mhts
  *
  */
-public class MajorityElement {
+public class MajorityElement_01 {
 	public static void main(String[] args){
 		int[] nums = new int[101];
 		for(int i = 0;i < 49; i++){

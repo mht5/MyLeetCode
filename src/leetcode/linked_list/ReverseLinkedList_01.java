@@ -9,7 +9,7 @@ import leetcode.util.ListNode;
  * @author mhts
  * 
  */
-public class ReverseLinkedList {
+public class ReverseLinkedList_01 {
 	public static void main(String[] args){
 		ListNode node1=new ListNode(1);
 		ListNode node2=new ListNode(2);
